@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="My Dashboard"
+            android:textColor="#D3D3D3"
+            android:textSize="24sp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="4">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDonate"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:background="#16656565"
+                android:clickable="true"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/donate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:background="#D3D3D3"
+                    android:text="Donate"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReceive"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/rcv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:background="#D3D3D3"
+                    android:text="Receive"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMyPin"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="#D3D3D3"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/mypins" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:background="@color/white"
+                    android:text="My Pins"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHistory"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:background="@color/white"
+                    android:text="History"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAboutus"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:background="@color/white"
+                    android:text="About Us"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContact"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:background="@color/white"
+                    android:text="Contact Us"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLogout"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/lgout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:background="@color/white"
+                    android:text="Log Out"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
